@@ -12,7 +12,9 @@ npm install --save webext-dynamic-content-scripts
 
 ## Usage
 
+<details><summary>
 ### Plain files
+</summary>
 
 1. In your `manifest.json`, include the file as background and as content script:
 
@@ -34,14 +36,15 @@ npm install --save webext-dynamic-content-scripts
 	}
 	```
 
-2. In your background script **only**, run `injectContentScripts()`
+</details>
+
+2. In your background script **only**, run `dynamicContentScripts()`
 
 ### With a bundler
 
 ```js
 // background.js
-import injectContentScripts from 'webext-dynamic-content-scripts';
-injectContentScripts();
+import dynamicContentScripts from 'webext-dynamic-content-scripts';
 ```
 
 ```js
@@ -51,11 +54,11 @@ import 'webext-dynamic-content-scripts'; // needed to make sure that scripts are
 
 ## API
 
-#### injectContentScripts([tab])
+#### dynamicContentScripts([tab])
 
 This will inject all the `content_scripts` and their CSS files listed in `manifest.json`.
 
-If `tab` is not specified, `injectContentScripts()` will automatically listen to new tabs and inject the scripts as needed.
+If `tab` is not specified, `dynamicContentScripts()` will automatically listen to new tabs and inject the scripts as needed.
 
 ##### tab
 

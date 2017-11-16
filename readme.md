@@ -13,7 +13,9 @@ npm install --save webext-dynamic-content-scripts
 ## Usage
 
 <details><summary>
+	
 ### Plain files
+	
 </summary>
 
 1. In your `manifest.json`, include the file as background and as content script:

@@ -43,7 +43,7 @@
   "devDependencies": {
     "@types/firefox-webext-browser": "^65.0.0",
     "onchange": "^3.2.0",
-    "rollup": "^0.41.6",
+    "rollup": "^4.66.0",
     "rollup-config-webext": "^1.1.0",
     "rollup-watch": "^3.2.2",
     "xo": "^0.18.2"
